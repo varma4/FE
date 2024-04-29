@@ -1,0 +1,43 @@
+<form (ngSubmit)="onSubmit()" class="signup-form">
+  <div class="form-group">
+    <h1>Patient SignUp</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="Name" [(ngModel)]="patient.Name" required>
+  </div>
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <select id="gender" name="Gender" [(ngModel)]="patient.Gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="dateOfBirth">Date of Birth:</label>
+    <input type="date" id="dateOfBirth" name="DateOfBirth" [(ngModel)]="patient.DateOfBirth" required>
+  </div>
+  <div class="form-group">
+    <label for="contactNumber">Contact Number:</label>
+    <input type="text" id="contactNumber" name="ContactNumber" [(ngModel)]="patient.ContactNumber" required>
+  </div>
+  <div class="form-group">
+    <label for="address">Address:</label>
+    <textarea id="address" name="Address" [(ngModel)]="patient.Address" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="Email" [(ngModel)]="patient.Email" required>
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="Password" [(ngModel)]="patient.Password" required>
+  </div>
+  <div class="form-group">
+    <label for="insuranceInformation">Insurance Information:</label>
+    <textarea id="insuranceInformation" name="InsuranceInformation" [(ngModel)]="patient.InsuranceInformation"></textarea>
+  </div>
+  <button type="submit">Submit</button>
+  <div class="a">
+    <a routerLink="/login">patient login</a>
+    <a routerLink="/doctorLogin">doctor login</a>
+  </div>
+</form>

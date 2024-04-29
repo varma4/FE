@@ -1,0 +1,65 @@
+.billing-list {
+  font-family: Arial, sans-serif;
+}
+
+.billing-list h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.bill-details {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  margin-bottom: 10px;
+}
+
+.detail-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.billing-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.billing-form h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}

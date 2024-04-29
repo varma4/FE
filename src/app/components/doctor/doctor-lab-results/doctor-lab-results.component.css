@@ -1,0 +1,19 @@
+.test-result-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.test-result-detail {
+  margin-left: 10px;
+}
+
+.test-result-detail p {
+  margin: 5px 0;
+}
+
+.test-result-detail p strong {
+  font-weight: bold;
+}

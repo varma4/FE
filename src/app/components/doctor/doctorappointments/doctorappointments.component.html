@@ -1,0 +1,14 @@
+<h2>Appointments List</h2>
+
+<div *ngFor="let appointment of appointments" class="appointment-item">
+  <div class="appointment-detail">
+    <p><strong>Appointment ID:</strong> {{ appointment.AppointmentID }}</p>
+    <p><strong>Patient ID:</strong> {{ appointment.PatientID }}</p>
+    <p><strong>Doctor ID:</strong> {{ appointment.DoctorID }}</p>
+    <p><strong>Appointment Date:</strong> {{ appointment.AppointmentDate | date:'medium' }}</p>
+    <p><strong>Appointment Time:</strong> {{ appointment.AppointmentTime }}</p>
+    <p><strong>Status:</strong> {{ appointment.Status }}</p>
+    <p><strong>Doctor Name:</strong> {{ appointment.DoctorName }}</p>
+    <p><strong>Patient Name:</strong> {{ appointment.PatientName }}</p>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+.surgery-details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.detail-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.detail-value {
+  flex: 1;
+}

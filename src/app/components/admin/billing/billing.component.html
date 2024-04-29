@@ -1,0 +1,63 @@
+<div class="billing-form">
+  <h2>Enter Billing Information</h2>
+  <form (submit)="submitBillingForm()">
+    <div class="form-group">
+      <label for="patientID">Patient ID:</label>
+      <input type="text" id="patientID" name="patientID" [(ngModel)]="newBilling.PatientID" required>
+    </div>
+    <div class="form-group">
+      <label for="patientName">Patient Name:</label>
+      <input type="text" id="patientName" name="patientName" [(ngModel)]="newBilling.PatientName" required>
+    </div>
+    <div class="form-group">
+      <label for="totalAmount">Total Amount:</label>
+      <input type="text" id="totalAmount" name="totalAmount" [(ngModel)]="newBilling.TotalAmount" required>
+    </div>
+    <div class="form-group">
+      <label for="paymentStatus">Payment Status:</label>
+      <input type="text" id="paymentStatus" name="paymentStatus" [(ngModel)]="newBilling.PaymentStatus" required>
+    </div>
+    <div class="form-group">
+      <label for="billDate">Bill Date:</label>
+      <input type="date" id="billDate" name="billDate" [(ngModel)]="newBilling.BillDate" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<div class="billing-list">
+  <ul>
+    <li *ngFor="let bill of billings">
+      <div class="bill-details">
+        <div class="detail-row">
+          <span class="detail-label">Bill ID:</span>
+          <span>{{ bill.BillID }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Patient ID:</span>
+          <span>{{ bill.PatientID }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Patient Name:</span>
+          <span>{{ bill.PatientName }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Total Amount:</span>
+          <span>{{ bill.TotalAmount }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Payment Status:</span>
+          <span>{{ bill.PaymentStatus }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Bill Date:</span>
+          <span>{{ bill.BillDate }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Patient Name:</span>
+          <span>{{ bill.PatientName }}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

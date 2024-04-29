@@ -1,0 +1,21 @@
+.records-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.record-details {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.detail-label {
+  font-weight: bold;
+  margin-right: 10px;
+}

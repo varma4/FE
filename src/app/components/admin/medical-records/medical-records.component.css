@@ -1,0 +1,51 @@
+/* Nurse List */
+.nurse-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.nurse-list h2 {
+  text-align: center;
+}
+
+.nurse-details {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.detail-row {
+  margin-bottom: 5px;
+}
+
+.detail-label {
+  font-weight: bold;
+}
+
+.detail-row span {
+  margin-left: 10px;
+}
+
+/* Medical Records */
+.records-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.record-details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.detail-row {
+  margin-bottom: 10px;
+}
+
+.detail-label {
+  font-weight: bold;
+}

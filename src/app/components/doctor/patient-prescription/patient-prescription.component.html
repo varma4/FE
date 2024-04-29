@@ -1,0 +1,35 @@
+<h3 class="prescription-heading">Prescription Details</h3>
+<div *ngFor="let prescription of prescriptions" class="prescription-details">
+  <div class="detail-row">
+    <span class="detail-label">Prescription ID:</span>
+    <span>{{ prescription.PrescriptionID }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Patient Name:</span>
+    <span>{{ prescription.PatientName }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Doctor Name:</span>
+    <span>{{ prescription.DoctorName }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Date:</span>
+    <span>{{ prescription.Date | date }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Medication:</span>
+    <span>{{ prescription.Medication }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Dosage:</span>
+    <span>{{ prescription.Dosage }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Frequency:</span>
+    <span>{{ prescription.Frequency }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Duration:</span>
+    <span>{{ prescription.Duration }}</span>
+  </div>
+</div>

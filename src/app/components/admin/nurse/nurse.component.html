@@ -1,0 +1,63 @@
+<div class="create-nurse-form">
+  <h2>Create New Nurse</h2>
+  <form (submit)="submitCreateNurseForm()">
+    <div class="form-group">
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" [(ngModel)]="newNurse.Department" required>
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" [(ngModel)]="newNurse.Name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="newNurse.Email" required>
+    </div>
+    <div class="form-group">
+      <label for="scheduling">Scheduling:</label>
+      <input type="text" id="scheduling" name="scheduling" [(ngModel)]="newNurse.Scheduling" required>
+    </div>
+    <button type="submit">Create Nurse</button>
+  </form>
+</div>
+
+
+<div class="nurse-list">
+  <h2>Nurse List</h2>
+  <ul>
+    <li *ngFor="let nurse of nurses">
+      <div class="nurse-details">
+        <div class="detail-row">
+          <span class="detail-label">Name:</span>
+          <span>{{ nurse.Name }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Department:</span>
+          <span>{{ nurse.Department }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Email:</span>
+          <span>{{ nurse.Email }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Scheduling:</span>
+          <span>{{ nurse.Scheduling }}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+<div class="user-list-container">
+  <h2>Admin staff List</h2>
+  <div *ngFor="let user of adminStaff" class="user-item">
+    <div class="user-property user-name">{{ user.Name }}</div>
+    <div class="user-property">Email: <span class="user-details">{{ user.Email }}</span></div>
+    <div class="user-property">Department: <span class="user-details">{{ user.Department }}</span></div>
+    <div class="user-property">Role: <span class="user-details">{{ user.Role }}</span></div>
+    <div class="user-property">StaffID: <span class="user-details">{{ user.StaffID }}</span></div>
+  </div>
+</div>
+

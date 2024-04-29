@@ -1,0 +1,72 @@
+<div class="create-appointment-form">
+  <h2>Create New Appointment</h2>
+  <form (submit)="submitCreateAppointmentForm()">
+    <div class="form-group">
+      <label for="patientID">Patient ID:</label>
+      <input type="text" id="patientID" name="patientID" [(ngModel)]="newAppointment.PatientID" readonly>
+    </div>
+    <div class="form-group">
+      <label for="doctorID">Doctor ID:</label>
+      <input type="text" id="doctorID" name="doctorID" [(ngModel)]="newAppointment.DoctorID" required>
+    </div>
+    <div class="form-group">
+      <label for="appointmentDate">Appointment Date:</label>
+      <input type="date" id="appointmentDate" name="appointmentDate" [(ngModel)]="newAppointment.AppointmentDate" required>
+    </div>
+    <div class="form-group">
+      <label for="appointmentTime">Appointment Time:</label>
+      <input type="time" id="appointmentTime" name="appointmentTime" [(ngModel)]="newAppointment.AppointmentTime" required>
+    </div>
+    <div class="form-group">
+      <label for="status">Status:</label>
+      <select id="status" name="status" [(ngModel)]="newAppointment.Status" required>
+        <option value="Scheduled">Scheduled</option>
+        <option value="Cancelled">Cancelled</option>
+        <option value="Completed">Completed</option>
+      </select>
+    </div>
+    <button type="submit">Create Appointment</button>
+  </form>
+</div>
+
+<div class="appointment-list">
+  <h2>Appointment List</h2>
+  <ul>
+    <li *ngFor="let appointment of appointments">
+      <div class="appointment-details">
+        <div class="detail-row">
+          <span class="detail-label">Appointment ID:</span>
+          <span>{{ appointment.AppointmentID }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Patient ID:</span>
+          <span>{{ appointment.PatientID }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Patient Name:</span>
+          <span>{{ appointment.PatientName }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Doctor ID:</span>
+          <span>{{ appointment.DoctorID }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Doctor Name:</span>
+          <span>{{ appointment.DoctorName }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Date:</span>
+          <span>{{ appointment.AppointmentDate | date: 'mediumDate' }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Time:</span>
+          <span>{{ appointment.AppointmentTime }}</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-label">Status:</span>
+          <span>{{ appointment.Status }}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

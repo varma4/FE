@@ -1,0 +1,19 @@
+<div class="form-container">
+  <form (ngSubmit)="onSubmit()" >
+    <h1>Doctor Login</h1>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" required placeholder="Enter your email" [(ngModel)]="doctor.Email" name="Email">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" required placeholder="Enter your password" [(ngModel)]="doctor.Password" name="Password">
+    </div>
+    <button type="submit">Login</button>
+    <div class="a">
+      <a routerLink="/doctorSignup">doctor signup</a>
+      <a routerLink="/">patient signup</a>
+    </div>
+
+  </form>
+</div>

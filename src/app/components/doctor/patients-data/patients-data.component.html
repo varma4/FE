@@ -1,0 +1,31 @@
+<h3 class="users-heading">Users Data</h3>
+<div *ngFor="let patient of patients" class="patient-details">
+  <div class="detail-row">
+    <span class="detail-label">Name:</span>
+    <span>{{ patient.Name }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Gender:</span>
+    <span>{{ patient.Gender }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Date of Birth:</span>
+    <span>{{ patient.DateOfBirth | date }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Contact Number:</span>
+    <span>{{ patient.ContactNumber }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Address:</span>
+    <span>{{ patient.Address }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Email:</span>
+    <span>{{ patient.Email }}</span>
+  </div>
+  <div class="detail-row">
+    <span class="detail-label">Insurance Information:</span>
+    <span>{{ patient.InsuranceInformation }}</span>
+  </div>
+</div>

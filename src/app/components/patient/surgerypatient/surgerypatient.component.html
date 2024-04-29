@@ -1,0 +1,33 @@
+<div class="surgery-container">
+  <h2>Surgeries</h2>
+  <div *ngFor="let surgery of surgeries" class="surgery-details">
+    <div class="detail-row">
+      <div class="detail-label">Surgery ID:</div>
+      <div class="detail-value">{{ surgery.SurgeryID }}</div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-label">Room Number:</div>
+      <div class="detail-value">{{ surgery.RoomNumber }}</div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-label">Doctor ID:</div>
+      <div class="detail-value">{{ surgery.DoctorID }}</div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-label">Status:</div>
+      <div class="detail-value">{{ surgery.Status }}</div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-label">Surgery Date:</div>
+      <div class="detail-value">{{ surgery.SurgeryDate }}</div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-label">Surgery Type:</div>
+      <div class="detail-value">{{ surgery.SurgeryType }}</div>
+    </div>
+    <div class="detail-row">
+      <div class="detail-label">Patient ID:</div>
+      <div class="detail-value">{{ surgery.PatientID }}</div>
+    </div>
+  </div>
+</div>

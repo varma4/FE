@@ -1,0 +1,13 @@
+<h2>Test Results List</h2>
+
+<div *ngFor="let testResult of testResults" class="test-result-item">
+  <div class="test-result-detail">
+    <p><strong>Result ID:</strong> {{ testResult.ResultID }}</p>
+    <p><strong>Test ID:</strong> {{ testResult.TestID }}</p>
+    <p><strong>Patient ID:</strong> {{ testResult.PatientID }}</p>
+    <p><strong>Doctor ID:</strong> {{ testResult.DoctorID }}</p>
+    <p><strong>Result Details:</strong> {{ testResult.ResultDetails }}</p>
+    <p><strong>Result Date:</strong> {{ testResult.ResultDate | date:'medium' }}</p>
+    <p><strong>Test Name:</strong> {{ testResult.Name }}</p>
+  </div>
+</div>
